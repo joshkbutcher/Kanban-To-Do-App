@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="kanban-board">
+        <div class="column" data-status="To-Do">
+            <h2>To-Do</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="column" data-status="In Progress">
+            <h2>In Progress</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="column" data-status="Done">
+            <h2>Done</h2>
+            <div class="card-container"></div>
+        </div>
+    </div>
+    <div id="add-card-form">
+        <input type="text" id="card-title" placeholder="Enter title" required />
+        <textarea id="card-description" placeholder="Enter description"></textarea>
+        <select id="card-status">
+            <option value="To-Do">To-Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Done">Done</option>
+        </select>
+        <button id="add-card-button">Add Card</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

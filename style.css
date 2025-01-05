@@ -1,0 +1,40 @@
+/* Parent container for Kanban board and form */
+#kanban-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the form (already provided in your CSS) */
+#add-card-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 90%; /* Match the Kanban board width */
+}
+
+#add-card-form input,
+#add-card-form textarea,
+#add-card-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#add-card-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-card-form button:hover {
+    background-color: #0056b3;
+}
